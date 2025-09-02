@@ -22,4 +22,6 @@ settings
 
 /browser/
 
+/tempBrowser/
+
 .DS_STORE

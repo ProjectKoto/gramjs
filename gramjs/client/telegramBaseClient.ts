@@ -320,9 +320,9 @@ export abstract class TelegramBaseClient {
         this.useWSS = clientParams.useWSS!;
         this._securityChecks = !!clientParams.securityChecks;
         if (this.useWSS && this._proxy) {
-            throw new Error(
-                "Cannot use SSL with proxies. You need to disable the useWSS client param in TelegramClient"
-            );
+            // throw new Error(
+            //     "Cannot use SSL with proxies. You need to disable the useWSS client param in TelegramClient"
+            // );
         }
         this._entityCache = new EntityCache();
         // These will be set later
